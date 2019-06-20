@@ -9,7 +9,7 @@ class CLI
         #guess_position
     end
 
-    def hit_it
+    def self.hit_it
         Player.new_from_scraper
     end    
 
