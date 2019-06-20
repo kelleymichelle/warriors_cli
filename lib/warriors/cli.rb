@@ -27,6 +27,12 @@ class CLI
         end
     end  
 
+  # dont know if this will actually work lol
+  def find_by_name(name)
+    Player.all.select {|person| name==person.name}
+  end  
+
+
     # def menu
     #     puts "Which player would you like to know more about?"
     #     input = gets.strip
